@@ -20,3 +20,6 @@ Baseline    : Current leaderboard pipeline can be viewed @ https://github.com/le
 
 My pipeline : Replaced my activation in place of Mish mentioned in the baseline
 
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
+
+![Result Comparison for 5 epochs on Leaderboard](comparison.png)
