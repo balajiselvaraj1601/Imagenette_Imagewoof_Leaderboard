@@ -19,6 +19,6 @@ My pipeline : Replaced my activation in place of Mish mentioned in the baseline
 
 
 Thanks,
+
 S.Balaji
-Linkedin Profile : https://www.linkedin.com/in/balaji-selvaraj-a2987572
 
