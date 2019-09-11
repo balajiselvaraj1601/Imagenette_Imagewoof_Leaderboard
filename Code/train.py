@@ -116,7 +116,7 @@ def train(
     print(" ---------------- Activation Function  ---------------- ")
     
     log_cb = partial(CSVLogger,filename=log)
-    result_path = "./backup/" + settings.activ.replace("()","") +  "_" + str(run_num)+ "_best_model"
+    result_path = settings.activ.replace("()","") +  "_" + str(run_num)+ "_best_model"
     
     learn = (Learner(data, m(c_out=10, sa=sa,sym=sym), wd=1e-2, opt_func=opt_func,
              metrics=[accuracy,top_k_accuracy],
