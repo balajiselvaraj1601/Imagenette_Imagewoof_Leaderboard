@@ -106,10 +106,10 @@ def train(
 
     m = globals()[arch]
 
-    settings.initialize()
-    func_list = [*functions]
-    name = func_list[name_num]
-    settings.activ = functions[name]
+    #settings.initialize()
+    #func_list = [*functions]
+    #name = func_list[name_num]
+    #settings.activ = functions[name]
 
     print(" ---------------- Activation Function  ---------------- ")
     print(settings.activ )
