@@ -12,6 +12,7 @@ from mxresnet import *
 from functools import partial
 from activations import *
 import settings
+from fastai.callbacks.mem import PeakMemMetric
 
 torch.backends.cudnn.benchmark = True
 fastprogress.MAX_COLS = 80
@@ -123,7 +124,7 @@ def train(
              bn_wd=False, true_wd=True,
              loss_func = LabelSmoothingCrossEntropy(),
              #callback_fns=[log_cb, partial(SaveModelCallback , every='epoch', monitor='accuracy' , name = result_path ) ])
-             callback_fns=[log_cb])
+             callback_fns=[log_cb , PeakMemMetric])
             )
     print(learn.path)
     n = len(learn.data.train_dl)
